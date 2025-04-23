@@ -32,7 +32,6 @@ const CONTACTS = [
   },
 ];
 
-// Custom Phone icon
 const PhoneIcon = ({ className }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -54,32 +53,11 @@ const AboutSection = () => {
   return (
     <section id="about" className="py-16 bg-white">
       <div className="container mx-auto px-4">
-        {/* Header with prominent name and contact line */}
+        {/* Header with prominent name */}
         <div className="flex flex-col sm:flex-row justify-between items-center mb-8 gap-3">
           <h1 className="text-3xl md:text-4xl font-playfair font-bold tracking-wide text-gray-900 drop-shadow">
             ADITI <span className="text-violet-600">STUTI</span>
           </h1>
-          <div className="flex flex-wrap items-center gap-4 sm:gap-6 text-base font-medium text-gray-700">
-            <a href="mailto:sinha.khushi403@gmail.com" className="flex items-center gap-1 hover:text-blue-600 transition-all">
-              <Mail className="w-5 h-5" />
-              sinha.khushi403@gmail.com
-            </a>
-            <span className="hidden sm:block">|</span>
-            <a href="https://linkedin.com/in/aditi-stuti" target="_blank" rel="noopener noreferrer" className="flex items-center gap-1 hover:text-blue-700 transition-all">
-              <Linkedin className="w-5 h-5" />
-              Linkedin
-            </a>
-            <span className="hidden sm:block">|</span>
-            <a href="https://github.com/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-1 hover:text-gray-800 transition-all">
-              <Github className="w-5 h-5" />
-              Github
-            </a>
-            <span className="hidden sm:block">|</span>
-            <a href="https://leetcode.com/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-1 hover:text-yellow-600 transition-all">
-              <FileText className="w-5 h-5" />
-              Leetcode
-            </a>
-          </div>
         </div>
         {/* Welcome headline */}
         <div className="text-center mt-4 mb-10">
