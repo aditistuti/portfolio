@@ -72,13 +72,6 @@ const SkillsSection = () => {
               />
             </div>
           </div>
-          {/* DSA */}
-          <div>
-            <h3 className="text-xl font-bold mb-6">DSA</h3>
-            <p className="text-base">
-              Solved 300+ problems on Leetcode, GFG, and other platforms.
-            </p>
-          </div>
         </div>
       </div>
     </section>
@@ -102,3 +95,4 @@ const SkillCard = ({ title, level, icon }: SkillCardProps) => {
 };
 
 export default SkillsSection;
+
