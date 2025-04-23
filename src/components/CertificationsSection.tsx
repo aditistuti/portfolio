@@ -4,45 +4,24 @@ const CertificationsSection = () => {
     <section id="certifications" className="py-16 bg-gray-50">
       <div className="container mx-auto px-4">
         <h2 className="text-2xl font-playfair font-bold mb-10">4. Certifications & Courses</h2>
-        
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Certification 1 */}
-          <div className="bg-white p-6 rounded-lg shadow-md">
-            <h3 className="text-lg font-bold mb-2">Complete Interview Preparation</h3>
-            <p className="text-gray-600 mb-4">- by GFG</p>
-            <div className="flex justify-center">
-              <img 
-                src="https://placehold.co/300x200/5f5/fff?text=GFG+Certificate" 
-                alt="GFG Certificate" 
-                className="rounded-md shadow-sm max-w-full h-auto" 
-              />
-            </div>
+          <div className="bg-white p-6 rounded-lg shadow-md flex flex-col items-center">
+            <h3 className="text-lg font-bold mb-2 text-center">Introduction to Large Language Models by Google Cloud</h3>
+            <p className="text-gray-600 mb-2 text-center">- Coursera<br /><span className="text-xs">Mar’ 2024</span></p>
+            <img src="https://placehold.co/300x200/4dc/fff?text=Google+Cloud+LLM" alt="Google Cloud LLM" className="rounded-md shadow-sm max-w-full h-auto" />
           </div>
-          
           {/* Certification 2 */}
-          <div className="bg-white p-6 rounded-lg shadow-md">
-            <h3 className="text-lg font-bold mb-2">Development in Flutter</h3>
-            <p className="text-gray-600 mb-4">- by Programming Pathsala</p>
-            <div className="flex justify-center">
-              <img 
-                src="https://placehold.co/300x200/55f/fff?text=Flutter+Certificate" 
-                alt="Flutter Certificate" 
-                className="rounded-md shadow-sm max-w-full h-auto" 
-              />
-            </div>
+          <div className="bg-white p-6 rounded-lg shadow-md flex flex-col items-center">
+            <h3 className="text-lg font-bold mb-2 text-center">ChatGPT Advanced Data Analysis</h3>
+            <p className="text-gray-600 mb-2 text-center">- Vanderbilt University<br /><span className="text-xs">Apr’ 2024</span></p>
+            <img src="https://placehold.co/300x200/0cf/fff?text=ChatGPT+Data" alt="ChatGPT Data" className="rounded-md shadow-sm max-w-full h-auto" />
           </div>
-          
           {/* Certification 3 */}
-          <div className="bg-white p-6 rounded-lg shadow-md">
-            <h3 className="text-lg font-bold mb-2">100 Days of Code: The Complete Python Pro Bootcamp for 2023</h3>
-            <p className="text-gray-600 mb-4">- by Udemy</p>
-            <div className="flex justify-center">
-              <img 
-                src="https://placehold.co/300x200/f55/fff?text=Udemy+Certificate" 
-                alt="Udemy Certificate" 
-                className="rounded-md shadow-sm max-w-full h-auto" 
-              />
-            </div>
+          <div className="bg-white p-6 rounded-lg shadow-md flex flex-col items-center">
+            <h3 className="text-lg font-bold mb-2 text-center">Full-Stack Development Using MERN Stack</h3>
+            <p className="text-gray-600 mb-2 text-center">- CipherSchools<br /><span className="text-xs">Aug’ 2024</span></p>
+            <img src="https://placehold.co/300x200/c4f/333?text=MERN+Stack" alt="MERN Stack" className="rounded-md shadow-sm max-w-full h-auto" />
           </div>
         </div>
       </div>

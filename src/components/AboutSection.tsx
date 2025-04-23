@@ -7,68 +7,79 @@ const AboutSection = () => {
     <section id="about" className="py-16 bg-white">
       <div className="container mx-auto px-4">
         <h1 className="text-3xl font-playfair font-bold text-center mb-8">
-          WEBSITE PORTFOLIO FORMAT: PROFILE OF AARAV MEHTA
+          ADITI STUTI
         </h1>
-        
+        <div className="text-center mb-4">
+          <span className="font-semibold text-lg mr-2">+91 9508660033</span> | 
+          <a href="mailto:sinha.khushi403@gmail.com" className="text-blue-600 hover:underline mx-2">sinha.khushi403@gmail.com</a> | 
+          <a href="https://linkedin.com/in/aditi-stuti" className="text-blue-600 hover:underline mx-2">Linkedin</a> | 
+          <a href="https://github.com/" className="text-blue-600 hover:underline mx-2">Github</a> | 
+          <a href="https://leetcode.com/" className="text-blue-600 hover:underline mx-2">Leetcode</a>
+        </div>
         <div className="mt-8">
           <h2 className="text-2xl font-playfair font-bold mb-6">1. Welcome to My Portfolio!</h2>
-          
           <div className="flex flex-col md:flex-row items-center md:items-start gap-8">
             <div className="md:order-2 flex-shrink-0">
               <img
-                src="/lovable-uploads/a6202fc0-6087-4967-bbf0-5ac46f226462.png"
-                alt="Aarav Mehta"
+                src="/lovable-uploads/d5d45bd3-6580-41be-bf26-545590d4ac21.png"
+                alt="Aditi Stuti"
                 className="w-48 h-auto rounded-md shadow-md"
               />
             </div>
-            
             <div className="md:order-1 flex-1">
               <h3 className="text-xl font-bold mb-3">About Me</h3>
               <p className="text-gray-700 mb-4">
-                Hi, I'm Aarav Mehta, a <span className="font-semibold">B.Tech Computer Science</span> student at{" "}
-                <span className="font-semibold">Lovely Professional University</span>, specializing in{" "}
-                <span className="font-semibold">Full-Stack Development</span>,{" "}
-                <span className="font-semibold">Artificial Intelligence</span>, and{" "}
-                <span className="font-semibold">Cloud Computing</span>.
+                Hi, I'm <span className="font-semibold">Aditi Stuti</span>, a dedicated B.Tech Computer Science student,
+                passionate about full-stack development, solving complex problems, and applying technology to build impactful solutions.
               </p>
               <p className="text-gray-700 mb-6">
-                I focus on building scalable applications and have a solid foundation in both front-end and back-end
-                development. I am committed to continuously improving my skills in emerging technologies.
+                Experienced in modern frameworks and a wide array of technologies. Eager to contribute and continue growing in innovative environments.
               </p>
-              
               <div className="space-y-3">
                 <div className="flex items-center gap-2">
                   <PhoneIcon className="w-5 h-5 text-gray-700" />
-                  <span className="font-semibold">Contact Me:</span> +91 98765 43210
+                  <span className="font-semibold">Contact Me:</span> +91 9508660033
                 </div>
-                
                 <div className="flex items-center gap-2">
                   <Mail className="w-5 h-5 text-gray-700" />
-                  <span className="font-semibold">Email:</span> aarav.mehta@example.com
+                  <span className="font-semibold">Email:</span> sinha.khushi403@gmail.com
                 </div>
-                
                 <div className="flex items-center gap-2">
                   <Linkedin className="w-5 h-5 text-gray-700" />
                   <span className="font-semibold">LinkedIn:</span>
-                  <a href="https://linkedin.com/in/aarav-mehta" className="text-blue-600 hover:underline">
-                    linkedin.com/in/aarav-mehta
+                  <a href="https://linkedin.com/in/aditi-stuti" className="text-blue-600 hover:underline">
+                    linkedin.com/in/aditi-stuti
                   </a>
                 </div>
-                
                 <div className="flex items-center gap-2">
                   <Github className="w-5 h-5 text-gray-700" />
                   <span className="font-semibold">GitHub:</span>
-                  <a href="https://github.com/aaravmehta" className="text-blue-600 hover:underline">
-                    github.com/aaravmehta
+                  <a href="https://github.com/" className="text-blue-600 hover:underline">
+                    github.com/
                   </a>
                 </div>
-                
                 <div className="flex items-center gap-2">
                   <FileText className="w-5 h-5 text-gray-700" />
                   <Button variant="outline" className="mt-2">
-                    Download my CV
+                    Download CV
                   </Button>
                 </div>
+              </div>
+
+              <div className="mt-8">
+                <h3 className="font-bold mb-2">Education</h3>
+                <ul>
+                  <li className="mb-1">
+                    <span className="font-semibold">Lovely Professional University</span>, <span className="italic">Phagwara, Punjab</span><br />
+                    Bachelor of Technology in Computer Science – <span className="font-semibold">7.3 CGPA</span><br />
+                    <span className="text-sm text-gray-500">Sep 2022 – Present</span>
+                  </li>
+                  <li>
+                    <span className="font-semibold">D.A.V. Public School</span>, <span className="italic">Patna, Bihar</span><br />
+                    Higher Secondary – <span className="font-semibold">84.4%</span><br />
+                    <span className="text-sm text-gray-500">Mar 2021 – March 2022</span>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
@@ -99,3 +110,4 @@ const PhoneIcon = ({ className }: { className?: string }) => {
 };
 
 export default AboutSection;
+

@@ -3,102 +3,81 @@ const SkillsSection = () => {
   return (
     <section id="skills" className="py-16 bg-gray-50">
       <div className="container mx-auto px-4">
-        <h2 className="text-2xl font-playfair font-bold mb-10">2. Skills & Technologies</h2>
-        
+        <h2 className="text-2xl font-playfair font-bold mb-10">2. Technical Skills</h2>
         <div className="space-y-12">
           {/* Programming Languages */}
           <div>
-            <h3 className="text-xl font-bold mb-6">Programming Languages</h3>
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
-              <SkillCard 
-                title="Python" 
-                level="Advanced" 
-                icon="/lovable-uploads/c7486fde-222b-4f9a-b9ff-ca52743ef9fd.png" 
-              />
-              <SkillCard 
-                title="Java" 
-                level="" 
-                icon="/lovable-uploads/45d18a7c-84db-4ba8-8311-b75871061bc1.png" 
-              />
-              <SkillCard 
-                title="C++" 
-                level="" 
-                icon="/lovable-uploads/959e1771-acb1-4f6b-b682-00162e0536ce.png" 
-              />
-              <SkillCard 
-                title="JavaScript" 
-                level="Advanced" 
-                icon="/lovable-uploads/1697901c-caf1-47b2-859b-d42ee99b181f.png" 
-              />
-            </div>
-          </div>
-          
-          {/* Frontend Development */}
-          <div>
-            <h3 className="text-xl font-bold mb-6">Frontend Development</h3>
+            <h3 className="text-xl font-bold mb-6">Languages & Frameworks</h3>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <SkillCard 
-                title="HTML5" 
-                level="Advanced" 
-                icon="/lovable-uploads/d439fe4e-25f7-4597-bf67-ef21a2702f84.png" 
+                title="Java" 
+                level="Advanced"
+                icon="https://cdn.worldvectorlogo.com/logos/java-14.svg"
               />
               <SkillCard 
-                title="CSS3" 
-                level="Advanced" 
-                icon="/lovable-uploads/3013778c-c095-4c0c-a182-2ae2e38f0790.png" 
+                title="C/C++" 
+                level="Advanced"
+                icon="https://cdn.worldvectorlogo.com/logos/c.svg"
               />
               <SkillCard 
-                title="Next.js" 
-                level="Intermediate" 
-                icon="https://cdn.worldvectorlogo.com/logos/nextjs-2.svg" 
+                title="SQL" 
+                level="Intermediate"
+                icon="https://cdn.worldvectorlogo.com/logos/mysql-6.svg"
+              />
+              <SkillCard 
+                title="JavaScript"
+                level="Advanced"
+                icon="/lovable-uploads/1697901c-caf1-47b2-859b-d42ee99b181f.png"
+              />
+              <SkillCard 
+                title="HTML/CSS"
+                level="Advanced"
+                icon="/lovable-uploads/d439fe4e-25f7-4597-bf67-ef21a2702f84.png"
+              />
+              <SkillCard 
+                title="PHP"
+                level="Intermediate"
+                icon="https://cdn.worldvectorlogo.com/logos/php-1.svg"
+              />
+              <SkillCard 
+                title="ReactJS"
+                level="Advanced"
+                icon="https://cdn.worldvectorlogo.com/logos/react-2.svg"
+              />
+              <SkillCard 
+                title="Node.js"
+                level="Advanced"
+                icon="https://cdn.worldvectorlogo.com/logos/nodejs-icon.svg"
+              />
+              <SkillCard 
+                title="Laravel"
+                level="Intermediate"
+                icon="https://cdn.worldvectorlogo.com/logos/laravel-2.svg"
               />
             </div>
           </div>
-          
-          {/* Backend Development */}
+          {/* DSA & Developer Tools */}
           <div>
-            <h3 className="text-xl font-bold mb-6">Backend Development</h3>
+            <h3 className="text-xl font-bold mb-6">Developer Tools & Libraries</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <SkillCard 
-                title="Node.js" 
-                level="Advanced" 
-                icon="https://cdn.worldvectorlogo.com/logos/nodejs-icon.svg" 
+                title="Git, VS Code, IntelliJ" 
+                level="Tools"
+                icon="https://cdn.worldvectorlogo.com/logos/git-icon.svg"
               />
               <SkillCard 
-                title="Express.js" 
-                level="Intermediate" 
-                icon="https://cdn.worldvectorlogo.com/logos/express-109.svg" 
+                title="ExpressJS, JQuery, Mongoose" 
+                level="Libraries"
+                icon="https://cdn.worldvectorlogo.com/logos/express-109.svg"
               />
             </div>
           </div>
-          
-          {/* Databases */}
+          {/* DSA */}
           <div>
-            <h3 className="text-xl font-bold mb-6">Databases</h3>
-            <div className="grid grid-cols-1 md:grid-cols-1 gap-6">
-              <SkillCard 
-                title="MySQL" 
-                level="Intermediate" 
-                icon="https://cdn.worldvectorlogo.com/logos/mysql-6.svg" 
-              />
-            </div>
-          </div>
-          
-          {/* Cloud & DevOps */}
-          <div>
-            <h3 className="text-xl font-bold mb-6">Cloud & DevOps</h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <SkillCard 
-                title="AWS" 
-                level="Intermediate" 
-                icon="https://cdn.worldvectorlogo.com/logos/aws-2.svg" 
-              />
-              <SkillCard 
-                title="Docker" 
-                level="Intermediate" 
-                icon="https://cdn.worldvectorlogo.com/logos/docker.svg" 
-              />
-            </div>
+            <h3 className="text-xl font-bold mb-6">DSA</h3>
+            <p className="text-base">
+              Solved 300+ problems on Leetcode, GFG, and other platforms.
+            </p>
           </div>
         </div>
       </div>
