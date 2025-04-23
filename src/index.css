@@ -7,6 +7,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .card-gradient {
+    @apply bg-gradient-to-br from-gray-50 via-white to-yellow-50;
+  }
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;
