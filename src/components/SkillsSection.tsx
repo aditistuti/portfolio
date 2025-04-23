@@ -15,29 +15,29 @@ const SkillsSection = () => {
                 icon="https://cdn.worldvectorlogo.com/logos/java-14.svg"
               />
               <SkillCard 
-                title="C/C++" 
+                title="C++" 
                 level="Advanced"
                 icon="https://cdn.worldvectorlogo.com/logos/c.svg"
               />
               <SkillCard 
                 title="SQL" 
                 level="Intermediate"
-                icon="https://cdn.worldvectorlogo.com/logos/mysql-6.svg"
+                icon="mysql.svg"
               />
               <SkillCard 
                 title="JavaScript"
                 level="Advanced"
-                icon="/lovable-uploads/1697901c-caf1-47b2-859b-d42ee99b181f.png"
+                icon="jas.svg"
               />
               <SkillCard 
                 title="HTML/CSS"
                 level="Advanced"
-                icon="/lovable-uploads/d439fe4e-25f7-4597-bf67-ef21a2702f84.png"
+                icon="html.svg"
               />
               <SkillCard 
                 title="PHP"
                 level="Intermediate"
-                icon="https://cdn.worldvectorlogo.com/logos/php-1.svg"
+                icon="php.svg"
               />
               <SkillCard 
                 title="ReactJS"

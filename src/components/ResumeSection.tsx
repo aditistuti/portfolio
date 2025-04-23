@@ -23,7 +23,7 @@ const ResumeSection = () => {
               Click below to get the up-to-date PDF of my professional CV.
             </p>
             <a
-              href="/resume/aditi-stuti-resume.pdf"
+              href="cv.pdf"
               download
               className="w-full flex justify-center"
               tabIndex={-1}

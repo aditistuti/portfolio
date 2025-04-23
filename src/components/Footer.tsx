@@ -19,14 +19,14 @@ const Footer = () => {
               <Mail size={24} />
             </a>
             <a 
-              href="https://linkedin.com/in/aditi-stuti" 
+              href="https://www.linkedin.com/in/aditi-stuti-b1a365234/" 
               className="hover:text-blue-600 transition-colors p-2 rounded-full bg-white/60 hover:bg-blue-50 shadow hover:scale-110 duration-200"
               aria-label="LinkedIn"
             >
               <Linkedin size={24} />
             </a>
             <a 
-              href="https://github.com/aditi-stuti"
+              href="https://github.com/aditistuti"
               className="hover:text-gray-800 transition-colors p-2 rounded-full bg-white/60 hover:bg-gray-100 shadow hover:scale-110 duration-200"
               aria-label="GitHub"
             >

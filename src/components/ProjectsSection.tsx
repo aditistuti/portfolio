@@ -1,4 +1,3 @@
-
 const ProjectsSection = () => {
   return (
     <section id="projects" className="py-16 bg-white">
@@ -8,6 +7,7 @@ const ProjectsSection = () => {
           {/* Project 1: TRIPPER */}
           <ProjectRow
             title="TRIPPER (Travel Planner Website)"
+            githubLink="https://github.com/aditistuti/travelplanner"  // Add GitHub link here
             tech="JavaScript, NodeJS, MongoDB"
             details={[
               "Led development of TRIPPER, a cutting-edge travel planning app, leveraging React.js and Node.js",
@@ -16,12 +16,13 @@ const ProjectsSection = () => {
               "Integrated Google Maps API for enhanced navigation and location-based suggestions"
             ]}
             date="Nov’ 2024 – Jan’ 2025"
-            img="/lovable-uploads/9df9cab5-05d9-47f6-b72b-721ccaa59a9b.png"
+            img="trip.png"
             imgAlt="Tripper Project"
           />
           {/* Project 2: NOTE APP */}
           <ProjectRow
             title="NOTE APP"
+            githubLink="https://github.com/aditistuti/Note_app"  // Add GitHub link here
             tech="JavaScript, Node.js, MongoDB, ReactJS"
             details={[
               "Created a comprehensive note management web app using React.js and Node.js, focusing on user authentication and note management features",
@@ -29,12 +30,13 @@ const ProjectsSection = () => {
               "Optimized database queries and improved performance and user experience"
             ]}
             date="Jun’ 2024 – Oct’ 2024"
-            img="https://placehold.co/600x400/829/fff?text=Note+App"
+            img="note.jpeg"
             imgAlt="Note App Project"
           />
           {/* Project 3: LIZA CREATION */}
           <ProjectRow
             title="LIZA CREATION"
+            githubLink="https://main-liza-creation.vercel.app"  // Add GitHub link here
             tech="JavaScript, ReactJS, NodeJS, MongoDB"
             details={[
               "Developed a comprehensive website for a boutique focusing on showcasing products and managing customer interactions",
@@ -42,7 +44,7 @@ const ProjectsSection = () => {
               "Integrated an admin dashboard with a responsive UI and optimized backend services"
             ]}
             date="Jan’ 2024 – May’ 2024"
-            img="https://placehold.co/600x400/ccf/333?text=LIZA+Creation"
+            img="b.png"
             imgAlt="LIZA Project"
           />
         </div>
@@ -53,6 +55,7 @@ const ProjectsSection = () => {
 
 type ProjectRowProps = {
   title: string;
+  githubLink: string;  // Add GitHub link prop
   tech: string;
   details: string[];
   date: string;
@@ -60,10 +63,15 @@ type ProjectRowProps = {
   imgAlt: string;
 };
 
-const ProjectRow = ({ title, tech, details, date, img, imgAlt }: ProjectRowProps) => (
+const ProjectRow = ({ title, githubLink, tech, details, date, img, imgAlt }: ProjectRowProps) => (
   <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center bg-gradient-to-br from-white via-gray-50 to-blue-50 rounded-2xl shadow-lg p-6 group transition-all duration-300 border border-gray-100 hover:shadow-2xl hover:scale-[1.025]">
     <div>
-      <h3 className="text-xl font-bold mb-2 text-gray-900">{title}</h3>
+      <h3 className="text-xl font-bold mb-2 text-gray-900">
+        {/* Wrap title with anchor tag to link to GitHub */}
+        <a href={githubLink} target="_blank" rel="noopener noreferrer" className="text-violet-700 hover:underline">
+          {title}
+        </a>
+      </h3>
       <p className="italic mb-2 text-violet-800">{tech}</p>
       <ul className="list-disc pl-5 text-gray-700 mb-4 space-y-1">
         {details.map((d, idx) => (
