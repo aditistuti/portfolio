@@ -65,22 +65,6 @@ const AboutSection = () => {
                   </Button>
                 </div>
               </div>
-
-              <div className="mt-8">
-                <h3 className="font-bold mb-2">Education</h3>
-                <ul>
-                  <li className="mb-1">
-                    <span className="font-semibold">Lovely Professional University</span>, <span className="italic">Phagwara, Punjab</span><br />
-                    Bachelor of Technology in Computer Science – <span className="font-semibold">7.3 CGPA</span><br />
-                    <span className="text-sm text-gray-500">Sep 2022 – Present</span>
-                  </li>
-                  <li>
-                    <span className="font-semibold">D.A.V. Public School</span>, <span className="italic">Patna, Bihar</span><br />
-                    Higher Secondary – <span className="font-semibold">84.4%</span><br />
-                    <span className="text-sm text-gray-500">Mar 2021 – March 2022</span>
-                  </li>
-                </ul>
-              </div>
             </div>
           </div>
         </div>
@@ -110,4 +94,3 @@ const PhoneIcon = ({ className }: { className?: string }) => {
 };
 
 export default AboutSection;
-
