@@ -1,3 +1,4 @@
+
 import { Mail, Linkedin, Github, FileText } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -53,12 +54,13 @@ const AboutSection = () => {
   return (
     <section id="about" className="py-16 bg-white">
       <div className="container mx-auto px-4">
-        {/* Header with prominent name */}
-        <div className="flex flex-col sm:flex-row justify-between items-center mb-8 gap-3">
+        {/* Header with centered name */}
+        <div className="flex flex-col items-center text-center mb-8 gap-3">
           <h1 className="text-3xl md:text-4xl font-playfair font-bold tracking-wide text-gray-900 drop-shadow">
             ADITI <span className="text-violet-600">STUTI</span>
           </h1>
         </div>
+        
         {/* Welcome headline */}
         <div className="text-center mt-4 mb-10">
           <h2 className="text-xl md:text-2xl font-semibold font-playfair mb-1 tracking-wide text-gray-800">
