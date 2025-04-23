@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 
 const Navbar = () => {
@@ -18,7 +17,6 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
   
-  // Close mobile menu when navigating
   const handleNavLinkClick = () => {
     setIsMobileMenuOpen(false);
   };
@@ -40,7 +38,6 @@ const Navbar = () => {
             <NavLink href="#certifications">Certifications</NavLink>
             <NavLink href="#experience">Experience</NavLink>
             <NavLink href="#achievements">Achievements</NavLink>
-            <NavLink href="#blog">Blog</NavLink>
             <NavLink href="#resume">Resume</NavLink>
           </div>
           
@@ -63,7 +60,6 @@ const Navbar = () => {
         </div>
       </div>
       
-      {/* Mobile Menu */}
       {isMobileMenuOpen && (
         <div className="md:hidden bg-white shadow-lg animate-fade-in">
           <div className="container mx-auto px-4 py-4 flex flex-col space-y-4">
@@ -73,7 +69,6 @@ const Navbar = () => {
             <NavLink href="#certifications" onClick={handleNavLinkClick}>Certifications</NavLink>
             <NavLink href="#experience" onClick={handleNavLinkClick}>Experience</NavLink>
             <NavLink href="#achievements" onClick={handleNavLinkClick}>Achievements</NavLink>
-            <NavLink href="#blog" onClick={handleNavLinkClick}>Blog</NavLink>
             <NavLink href="#resume" onClick={handleNavLinkClick}>Resume</NavLink>
           </div>
         </div>

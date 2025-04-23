@@ -6,12 +6,10 @@ import ProjectsSection from "@/components/ProjectsSection";
 import CertificationsSection from "@/components/CertificationsSection";
 import ExperienceSection from "@/components/ExperienceSection";
 import AchievementsSection from "@/components/AchievementsSection";
-import BlogSection from "@/components/BlogSection";
 import ResumeSection from "@/components/ResumeSection";
 import Footer from "@/components/Footer";
 
 const Index = () => {
-  // Smooth scrolling effect for anchor links
   useEffect(() => {
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function (e) {
@@ -24,7 +22,7 @@ const Index = () => {
         if (!targetElement) return;
         
         window.scrollTo({
-          top: targetElement.offsetTop - 80, // Offset for the fixed header
+          top: targetElement.offsetTop - 80,
           behavior: 'smooth'
         });
       });
@@ -42,7 +40,6 @@ const Index = () => {
         <CertificationsSection />
         <ExperienceSection />
         <AchievementsSection />
-        <BlogSection />
         <ResumeSection />
       </main>
       
