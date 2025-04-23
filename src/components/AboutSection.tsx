@@ -1,4 +1,3 @@
-
 import { Mail, Linkedin, Github, FileText } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -13,25 +12,43 @@ const CONTACTS = [
   {
     href: "https://linkedin.com/in/aditi-stuti",
     Icon: Linkedin,
-    label: "linkedin.com/in/aditi-stuti",
+    label: "Linkedin",
     sr: "LinkedIn",
     color: "text-blue-700",
   },
   {
     href: "https://github.com/",
     Icon: Github,
-    label: "github.com/",
+    label: "Github",
     sr: "GitHub",
     color: "text-gray-800",
   },
   {
     href: "https://leetcode.com/",
     Icon: FileText,
-    label: "leetcode.com/",
+    label: "Leetcode",
     sr: "Leetcode",
     color: "text-yellow-600",
   },
 ];
+
+// Custom Phone icon
+const PhoneIcon = ({ className }) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    width={24}
+    height={24}
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth={2}
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  >
+    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+  </svg>
+);
 
 const AboutSection = () => {
   return (
@@ -43,11 +60,6 @@ const AboutSection = () => {
             ADITI <span className="text-violet-600">STUTI</span>
           </h1>
           <div className="flex flex-wrap items-center gap-4 sm:gap-6 text-base font-medium text-gray-700">
-            <span className="flex items-center gap-1">
-              <PhoneIcon className="w-5 h-5 text-gray-600" />
-              +91 9508660033
-            </span>
-            <span className="hidden sm:block">|</span>
             <a href="mailto:sinha.khushi403@gmail.com" className="flex items-center gap-1 hover:text-blue-600 transition-all">
               <Mail className="w-5 h-5" />
               sinha.khushi403@gmail.com
@@ -72,10 +84,10 @@ const AboutSection = () => {
         {/* Welcome headline */}
         <div className="text-center mt-4 mb-10">
           <h2 className="text-xl md:text-2xl font-semibold font-playfair mb-1 tracking-wide text-gray-800">
-            <span className="mr-2 text-violet-600 font-bold">1.</span>
             Welcome to My Portfolio!
           </h2>
         </div>
+        
         <div className="flex flex-col md:flex-row items-center gap-10">
           {/* Avatar */}
           <div className="md:order-2 flex-shrink-0 flex flex-col items-center gap-3">
@@ -135,23 +147,5 @@ const AboutSection = () => {
     </section>
   );
 };
-
-// Custom Phone icon
-const PhoneIcon = ({ className }) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    className={className}
-    width={24}
-    height={24}
-    viewBox="0 0 24 24"
-    fill="none"
-    stroke="currentColor"
-    strokeWidth={2}
-    strokeLinecap="round"
-    strokeLinejoin="round"
-  >
-    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
-  </svg>
-);
 
 export default AboutSection;
