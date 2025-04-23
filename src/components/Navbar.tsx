@@ -29,14 +29,13 @@ const Navbar = () => {
     >
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center">
-          <a href="#" className="text-xl font-playfair font-bold text-gray-900">Aarav Mehta</a>
+          <a href="#" className="text-xl font-playfair font-bold text-gray-900">Aditi Stuti</a>
           
           <div className="hidden md:flex space-x-8">
             <NavLink href="#about">About</NavLink>
             <NavLink href="#skills">Skills</NavLink>
             <NavLink href="#projects">Projects</NavLink>
             <NavLink href="#certifications">Certifications</NavLink>
-            <NavLink href="#experience">Experience</NavLink>
             <NavLink href="#achievements">Achievements</NavLink>
             <NavLink href="#resume">Resume</NavLink>
           </div>
@@ -67,7 +66,6 @@ const Navbar = () => {
             <NavLink href="#skills" onClick={handleNavLinkClick}>Skills</NavLink>
             <NavLink href="#projects" onClick={handleNavLinkClick}>Projects</NavLink>
             <NavLink href="#certifications" onClick={handleNavLinkClick}>Certifications</NavLink>
-            <NavLink href="#experience" onClick={handleNavLinkClick}>Experience</NavLink>
             <NavLink href="#achievements" onClick={handleNavLinkClick}>Achievements</NavLink>
             <NavLink href="#resume" onClick={handleNavLinkClick}>Resume</NavLink>
           </div>
