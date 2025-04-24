@@ -53,9 +53,9 @@ const AchievementsSection = () => {
           <AchieveCard
             title="Dean’s List distinction in college"
             desc={<>Honored with Dean’s List distinction in college for ranking among the <span className="font-semibold">top 10%</span> of students.</>}
-            img="https://placehold.co/300x200/afa/fff?text=Dean's+List"
+            img="dn.png"
             alt="Dean's List Achievement"
-            onDoubleClick={() => handleOpenModal("https://placehold.co/600x400/afa/fff?text=Dean's+List", "Dean's List")}
+            onDoubleClick={() => handleOpenModal("dn.png", "Dean's List")}
           />
           <AchieveCard
             title="175+ coding problems solved"
