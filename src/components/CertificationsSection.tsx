@@ -69,13 +69,6 @@ const CertificationsSection = () => {
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <CertCard 
-            title="Full-Stack Development Using MERN Stack"
-            subtitle="- CipherSchools"
-            date="Aug’ 2024"
-            img="cp2.png"
-            alt="MERN Stack"
-          />
-          <CertCard 
             title="Data Structures & Algorithms - Interview Preparation"
             subtitle="- CipherSchools"
             date="Sep’ 2024"
@@ -83,9 +76,16 @@ const CertificationsSection = () => {
             alt="CipherSchools DSA"
           />
           <CertCard 
+            title="Full-Stack Development Using MERN Stack"
+            subtitle="- CipherSchools"
+            date="July’ 2024"
+            img="cp2.png"
+            alt="MERN Stack"
+          />
+          <CertCard 
             title="Introduction to Large Language Models by Google Cloud"
             subtitle="- Coursera"
-            date="Mar’ 2024"
+            date="Jan’ 2024"
             img="goog.jpeg"
             alt="Google Cloud LLM"
           />

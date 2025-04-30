@@ -56,20 +56,54 @@ const SkillsSection = () => {
               />
             </div>
           </div>
-          {/* DSA & Developer Tools */}
           <div>
-            <h3 className="text-xl font-bold mb-6 text-gray-700">Developer Tools & Libraries</h3>
+            <h3 className="text-xl font-bold mb-6 text-gray-700">Developer Tools</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <SkillCard 
-                title="Git, VS Code, IntelliJ" 
-                level="Tools"
+                title="Git" 
+                level="Tool"
                 icon="https://cdn.worldvectorlogo.com/logos/git-icon.svg"
               />
               <SkillCard 
-                title="ExpressJS, JQuery, Mongoose" 
-                level="Libraries"
-                icon="https://cdn.worldvectorlogo.com/logos/express-109.svg"
+                title="VS Code" 
+                level="Tool"
+                icon="https://cdn.worldvectorlogo.com/logos/visual-studio-code-1.svg"
               />
+              <SkillCard 
+                title="IntelliJ" 
+                level="Tool"
+                icon="https://cdn.worldvectorlogo.com/logos/intellij-idea-1.svg"
+              />
+              <SkillCard 
+                title="Figma" 
+                level="Tool"
+                icon="figma.png"
+              />
+            </div>
+
+            <h3 className="text-xl font-bold my-6 text-gray-700">Developer Libraries</h3>
+            <div className="w-full flex gap-8">
+              <div className="flex-1">
+                <SkillCard 
+                  title="ExpressJS" 
+                  level="Library"
+                  icon="https://cdn.worldvectorlogo.com/logos/express-109.svg"
+                />
+              </div>
+              <div className="flex-1">
+                <SkillCard 
+                  title="JQuery" 
+                  level="Library"
+                  icon="https://cdn.worldvectorlogo.com/logos/jquery-1.svg"
+                />
+              </div>
+              <div className="flex-1">
+                <SkillCard 
+                  title="Mongoose" 
+                  level="Library"
+                  icon="https://cdn.worldvectorlogo.com/logos/mongodb-icon-1.svg"
+                />
+              </div>
             </div>
           </div>
         </div>
